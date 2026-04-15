@@ -1,0 +1,74 @@
+name: Bug Report
+description: Something isn't working as expected
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug.
+      placeholder: "When I start PostgreSQL, the service shows 'Starting...' indefinitely."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How can we reproduce this?
+      placeholder: |
+        1. Add PostgreSQL 18
+        2. Click Start
+        3. Wait 30 seconds
+    validations:
+      required: true
+
+  - type: dropdown
+    id: service
+    attributes:
+      label: Service
+      description: Which service is affected?
+      options:
+        - PostgreSQL
+        - MySQL
+        - Redis
+        - MongoDB
+        - Redpanda
+        - Qdrant
+        - MinIO
+        - Not service-specific
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Zoebox version
+      placeholder: "1.7"
+    validations:
+      required: true
+
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: "15.3 (Sequoia)"
+    validations:
+      required: true
+
+  - type: input
+    id: chip
+    attributes:
+      label: Mac chip
+      placeholder: "M1 / M2 Pro / M3 Max / ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: "Paste relevant logs from Console.app (filter by `com.zoebox.app`) or `~/.local/share/zoebox/<service>/serial.log`."
+      render: text
+    validations:
+      required: false
