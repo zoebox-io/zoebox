@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.8 — 2026-05-06
+- Fixed an issue on macOS Tahoe where the menubar dropdown showed no services.
+
 ## 1.7 — 2026-03-01
 - Auto-hibernation — idle services hibernate after 5 minutes of inactivity, freeing RAM. They wake instantly on the next connection.
 - Qdrant — vector database for AI/ML workloads (versions 1.15, 1.16, 1.17).
