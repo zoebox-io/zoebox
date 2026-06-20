@@ -32,7 +32,7 @@ Postgres, MySQL, Redis, MongoDB, Qdrant, Redpanda, and MinIO in your menubar. Cl
 | MySQL | 3306 | 8.4, 9 |
 | Redis | 6379 | 6, 7, 8 |
 | MongoDB | 27017 | 7.0, 8.0 |
-| Redpanda | 9092 | 24, 25 |
+| Redpanda | 9092 | 24, 25, 26 |
 | Qdrant | 6333 | 1.15, 1.16, 1.17 |
 | MinIO | 9000 | 2024.10, 2025.04, 2025.09 |
 

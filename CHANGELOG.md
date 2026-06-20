@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.9 — 2026-06-20
+- Improved power efficiency.
+- Redpanda — added version 26.
+
 ## 1.8 — 2026-05-06
 - Fixed an issue on macOS Tahoe where the menubar dropdown showed no services.
 
